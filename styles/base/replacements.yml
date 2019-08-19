@@ -1,0 +1,37 @@
+extends: substitution
+message: Use '%s' instead of '%s'
+level: warning
+ignorecase: false
+# swap maps tokens in form of bad: good
+swap:
+  "admin": "administration"
+  "contrib": "contributed"
+  "D6": "Drupal 6"
+  "D7": "Drupal 7"
+  "D8": "Drupal 8"
+  "D9": "Drupal 9"
+  "Developer": "developer"
+  "[Dd]rupalize.me": "Drupalize.Me"
+  "[Dd]rupal[ -][Cc]onsole": "Drupal Console"
+  "[Dd]rupal[ -]  xCore": "Drupal core"
+  "Drupal to Drupal migration": "Drupal-to-Drupal migration"
+  "drush": "Drush"
+  "github": "GitHub"
+  "Github": "GitHub"
+  "in core": "in Drupal core"
+  "internet": "Internet"
+  "java[ -]?scripts?": JavaScript
+  "meta[ -]data": "metadata"
+  "node[.]?js": Node.js
+  "non-profit": "nonprofit"
+  "of core": "of Drupal core"
+  "off[ -]site": "offsite"
+  "on-line": "online"
+  " package.json ": "_package.json_"
+  " package-lock.json ": "_package-lock.json_"
+  "plug in": "plug-in"
+  "Site[ -]Builder": "site builder"
+  "sub-theme": "subtheme"
+  "Themer": "themer"
+  "Web": "web"
+  "web site": "website"

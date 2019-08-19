@@ -1,0 +1,21 @@
+# Ignore these words when doing spell checking. These mostly technical words or
+# domain sepecific jargon.
+acquia
+amazee
+cloudfront
+config
+dev
+devdependency
+devdepenencies
+drupal
+endsummary
+github
+javascript
+json
+lullabot
+netlify
+nodemon
+npm
+nvm
+src
+url

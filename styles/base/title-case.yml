@@ -1,0 +1,7 @@
+extends: capitalization
+message: "Tutorial title '%s' should be in title case"
+level: warning
+scope: heading.h1
+style: Chicago
+# $title, $sentence, $lower, $upper, or a pattern.
+match: $title

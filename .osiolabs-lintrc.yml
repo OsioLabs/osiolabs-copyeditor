@@ -1,0 +1,21 @@
+plugins:
+  remark-preset-lint-recommended:
+  preset-lint-markdown-style-guide:
+  # We don't wrap lines of text based on length.
+  lint-maximum-line-length: false
+  # We have some custom tags like [# summary #] which aren't valid Markdown.
+  remark-lint-no-undefined-references: false
+  remark-lint-no-shortcut-reference-link: false
+  # This is more subjective than objective.
+  remark-lint-no-duplicate-headings: false
+  lint-no-empty-url:
+  lint-final-newline:
+
+# These settings are used when you use remark to output formatted Markdown.
+settings:
+  bullet: "-"
+  emphasis: "*"
+  strong: "*"
+  fence: "`"
+  fences: true
+  incrementListMarker: false
