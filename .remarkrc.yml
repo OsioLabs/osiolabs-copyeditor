@@ -14,8 +14,9 @@ plugins:
 # These settings are used when you use remark to output formatted Markdown.
 settings:
   bullet: "-"
-  emphasis: "*"
+  emphasis: "_"
   strong: "*"
   fence: "`"
   fences: true
   incrementListMarker: false
+  listItemIndent: 1
