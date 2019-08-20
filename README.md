@@ -4,7 +4,9 @@ This repository contains a set of tools used for reviewing, and linting, Osio La
 
 ## Usage
 
-Add this as a dependency to whichever content repo you want to use the tools with.
+For most use-cases you'll want to add this as a dependency to whichever content repo you want to use the tools with. And then execute them using `npm run`.
+
+Note: Using the review tools requires that you have vale installed. See below.
 
 ```sh
 npm install https://github.com/OsioLabs/osiolabs-copyeditor
@@ -31,7 +33,9 @@ npm run review:all
 npm run review content/path/to/my-tutorial.md
 ```
 
-Note: Using the review tools requires that you have vale installed. See below.
+--------------------------------------------------------------------------------
+
+For more detailed information about the individual tools, and to work on development of these tools continue reading.
 
 ## Tutorial linter
 
