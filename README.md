@@ -2,33 +2,69 @@
 
 This repository contains a set of tools used for reviewing, and linting, Osio Labs content.
 
-Clone this repository to whatever machine you're using to perform the tutorial review.
+## Usage
+
+Add this as a dependency to whichever content repo you want to use the tools with.
+
+```sh
+npm install https://github.com/OsioLabs/osiolabs-copyeditor
+```
+
+Then add something like the following to your projects _package.json_ file:
+
+```json
+"scripts": {
+  "lint": "node ./node_modules/osiolabs-copyeditor/osiolabs-lint.js --rc-path=./node_modules/osiolabs-copyeditor/.osiolabs-lintrc.yml",
+  "lin:all": "npm run lint content/",
+  "review": "vale --config='./node_modules/osiolabs-copyeditor/.vale.ini'",
+  "review:all": "npm run review content/"
+},
+```
+
+Use the tools to lint/review content:
+
+```sh
+npm run lint:all
+npm run lint content/path/to/my-tutorial.md
+# Or
+npm run review:all
+npm run review content/path/to/my-tutorial.md
+```
+
+Note: Using the review tools requires that you have vale installed. See below.
 
 ## Tutorial linter
 
-Status: BROKEN - See https://spectrum.chat/unified/unified/i-cant-seem-to-get-a-unified-args-based-cli-script-to-locate-external-files~4c3cc72d-b925-4704-8b09-f1305f658a9e
-
 This set of tools is intended to enforce Markdown and other formatting styles. Similar to how a code base might have coding standards. Violating linter styles should be considered an error not a warning, and should be fixed before the content is published.
 
-`./osiolabs-lint.js --help`
-
-Usage example:
+Make it executable:
 
 ```sh
 cd path/to/osiolabs-copyeditor/
 chmod u+x ./osiolabs-lint.js
-./osiolabs-lint.js path/to/content/dir/
+```
+
+See help:
+
+```sh
+./osiolabs-lint.js --help
+```
+
+Usage example:
+
+```sh
+# Run the script from within the directory that contains the content you want to lint.
+cd path/to/heynode.com_content/
+path/to/osiolabs-copyeditor/osiolabs-lint.js --rc-path=path/to/osiolabs-copyeditor/.osiolabs-lintrc.yml content/
 ```
 
 Alternatively, create an alias so you can run this from anywhere using something like this in your _.bashrc_:
 
 ```sh
-alias="node /path/to/osiolabs-copyeditor/osiolabs-lint.js --rc-path=/path/to/osiolabs-copyeditor/.osiolabs-lintrc.yml"
+alias osiolabs-lint="node /Users/joe/Sites/osiolabs-copyeditor/osiolabs-lint.js --rc-path=/Users/joe/Sites/osiolabs-copyeditor/.osiolabs-lintrc.yml"
 ```
 
 ## Tutorial copy review
-
-Status: working
 
 This set of tools is intended to provide recommendations for improving a tutorial, and for conforming to both Osio Labs general, and product specific, style guides. Violating the copy review styles should be considered a warning not an error, and should at least be reviewed before the content is published. There are likely to be many exceptions to these rules.
 
@@ -47,5 +83,9 @@ Then run vale from within the content repository like so:
 
 ```sh
 cd ~/heynode.com_content/
-vale --config=path/to/osiolabs-copyeditor/vale/.vale.ini content/
+vale --config="path/to/osiolabs-copyeditor/vale/.vale.ini" content/
 ```
+
+### Modifying rules
+
+You can read more about adding or modifying the existing copy review rules here: https://errata-ai.github.io/vale/styles/
