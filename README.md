@@ -17,7 +17,7 @@ Then add something like the following to your projects _package.json_ file:
 ```json
 "scripts": {
   "lint": "node ./node_modules/osiolabs-copyeditor/osiolabs-lint.js --rc-path=./node_modules/osiolabs-copyeditor/.osiolabs-lintrc.yml",
-  "lin:all": "npm run lint content/",
+  "lint:all": "npm run lint content/",
   "review": "vale --config='./node_modules/osiolabs-copyeditor/.vale.ini'",
   "review:all": "npm run review content/"
 },
