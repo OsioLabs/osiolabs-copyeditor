@@ -10,6 +10,8 @@ plugins:
   remark-lint-no-duplicate-headings: false
   lint-no-empty-url:
   lint-final-newline:
+  # We use _ instead of * for emphasis because that's what Prettier does.
+  remark-lint-emphasis-marker: "_"
 
 # These settings are used when you use remark to output formatted Markdown.
 settings:
