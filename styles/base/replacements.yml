@@ -4,7 +4,8 @@ level: warning
 ignorecase: false
 # swap maps tokens in form of bad: good
 swap:
-  "admin": "administration"
+  # admin, but not admin/. Basically, don't apply this rule to paths like admin/content.
+  "admin[^/]": "administration"
   "contrib": "contributed"
   "D6": "Drupal 6"
   "D7": "Drupal 7"
