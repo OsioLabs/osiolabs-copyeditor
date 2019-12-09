@@ -6,4 +6,6 @@ code: false
 ignorecase: true
 tokens:
   - click
+  - clicked
+  - clicking
   - swipe
