@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "remark --rc-path=./node_modules/osiolabs-copyeditor/.remarkrc.yml",
+    "review": "vale --config='./node_modules/osiolabs-copyeditor/.vale.ini'"
   },
   "author": "",
   "license": "ISC",
