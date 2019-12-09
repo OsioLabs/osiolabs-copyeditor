@@ -12,7 +12,7 @@ drupal
 drush
 endsteps
 endsummary
-envideo
+endvideo
 github
 http
 https
