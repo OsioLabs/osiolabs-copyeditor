@@ -1,2 +1,6 @@
 node_modules/
 .idea/
+
+styles/Joblint/
+styles/proselint/
+styles/write-good/
