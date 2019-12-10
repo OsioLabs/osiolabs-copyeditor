@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": ". ./install-default-styles.sh"
+    "postinstall": ". ./install-default-styles.sh",
+    "lint": "remark --rc-path=./node_modules/osiolabs-copyeditor/.remarkrc.yml",
+    "review": "vale --config='./node_modules/osiolabs-copyeditor/.vale.ini'"
   },
   "author": "",
   "license": "ISC",
