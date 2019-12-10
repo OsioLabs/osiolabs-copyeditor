@@ -23,7 +23,8 @@ swap:
   "internet": "Internet"
   "java[ -]?scripts?": JavaScript
   "meta[ -]data": "metadata"
-  "node[.]?js": Node.js
+  # Adding the leading space ensures we don't trip up on things like gatsby-node.js.
+  "[\s]node[.]?js": Node.js
   "non-profit": "nonprofit"
   "of core": "of Drupal core"
   "off[ -]site": "offsite"

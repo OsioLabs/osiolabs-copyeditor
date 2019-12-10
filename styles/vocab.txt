@@ -13,6 +13,7 @@ drush
 endsteps
 endsummary
 endvideo
+gatsby
 github
 http
 https
@@ -22,6 +23,7 @@ lullabot
 mysql
 namespace
 netlify
+nginx
 nodemon
 npm
 nvm
