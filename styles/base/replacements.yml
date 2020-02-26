@@ -32,6 +32,7 @@ swap:
   " package.json ": "_package.json_"
   " package-lock.json ": "_package-lock.json_"
   "plug in": "plug-in"
+  "RESTFul": "RESTful"
   "Site[ -]Builder": "site builder"
   "sub-theme": "subtheme"
   "Themer": "themer"
