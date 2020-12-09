@@ -23,6 +23,7 @@ swap:
   "internet": "Internet"
   "java[ -]?scripts?": JavaScript
   "meta[ -]data": "metadata"
+  "{MODULENAME}.": "MODULENAME."
   # Adding the leading space ensures we don't trip up on things like gatsby-node.js.
   "[\s]node[.]?js": Node.js
   "non-profit": "nonprofit"
@@ -35,6 +36,7 @@ swap:
   "RESTFul": "RESTful"
   "Site[ -]Builder": "site builder"
   "sub-theme": "subtheme"
+  "{THEMENAME}.": "THEMENAME."
   "Themer": "themer"
   "Web": "web"
   "web site": "website"
