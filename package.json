@@ -9,12 +9,14 @@
     "review": "vale --config='./node_modules/osiolabs-copyeditor/.vale.ini'",
     "check-links": "remark --use='remark-lint-no-dead-urls'",
     "export-html": "node to-html.js",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "check-links": "^1.1.8",
+    "lodash": "^4.17.20",
     "lodash.iteratee": "^4.7.0",
     "rehype-format": "^3.1.0",
     "rehype-raw": "^5.0.0",
@@ -39,6 +41,7 @@
   },
   "devDependencies": {
     "jest": "^26.6.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "rehype": "^11.0.0"
   }
 }
