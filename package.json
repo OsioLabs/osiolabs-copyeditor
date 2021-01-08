@@ -8,7 +8,8 @@
     "lint": "remark --rc-path=./node_modules/osiolabs-copyeditor/.remarkrc.yml",
     "review": "vale --config='./node_modules/osiolabs-copyeditor/.vale.ini'",
     "check-links": "remark --use='remark-lint-no-dead-urls'",
-    "export-html": "node to-html.js"
+    "export-html": "node to-html.js",
+    "format": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
@@ -35,5 +36,9 @@
     "unist-util-is": "^4.0.4",
     "unist-util-remove": "^2.0.1",
     "unist-util-visit": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
   }
 }
