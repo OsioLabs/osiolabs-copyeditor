@@ -1,0 +1,13 @@
+plugins:
+  remark-rehype:
+    allowDangerousHtml: true
+  rehype-raw:
+  './lib/rehype-osiolabs-thinkific-video':
+  './lib/rehype-osiolabs-thinkific-images':
+  './lib/rehype-osiolabs-thinkific-links':
+  './lib/rehype-osiolabs-summary':
+  './lib/rehype-osiolabs-steps':
+  './lib/rehype-osiolabs-strip-internal':
+  rehype-format:
+  rehype-stringify:
+  

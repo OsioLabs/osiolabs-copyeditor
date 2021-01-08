@@ -34,6 +34,45 @@ For now we provide a set of vale rules that implement the Osio Labs style guide,
 - `npm run review path/to/file.md`: Output a Vale review for a specific file.
 - `npm run review:all`: Output a Vale review for all files in a content repo.
 
+## HTML exporter
+
+The /to-html.js script can be used to export tutorial markdown files to HTML. It is currently intended used to export Drupalize.Me content for use on Thinkific.
+
+Example:
+
+```sh
+npm run export-html path/to/file.md
+```
+
+It can convert most of our special tags like `[# summary #]` and `[# steps #]` to HTML. And handles transforming links and video embeds for Thinkific.
+
+When a tutorial links to another .md file in the same repository this will open the .md file that the link points to and look for a thinkific URL tag in the linked tutorial. If it finds one, then it will replace the link in the original tutorial with Thinkific link. If a thinkific link can not be found then the anchor tag is stripped from the link and a warning is output.
+
+Example thinkific URL tag:
+
+```markdown
+<!-- thinkific-url:https://example.com/thinkific-thing -->
+```
+
+If a tutorial .md file contains a video embed like:
+
+```markdown
+[# video #]
+id: 1235
+title: Video title
+[# endvideo #]
+```
+
+And a special block like the following anywhere in the .md file:
+
+```markdown
+<!-- thinkific-video-embed -->
+<p>EXAMPLE EMBED CODE STORED HERE</p>
+<!-- /thinkific-video-embed -->
+```
+
+The content of the `[# video #]` tag will be replaced with the content of the `<!-- thinkific-video-embed -->` block.
+
 ## Install copyeditor into a content repo
 
 For most use-cases you'll want to add this as a dependency to whichever content repo you want to use the tools with. And then execute them using `npm run`.
