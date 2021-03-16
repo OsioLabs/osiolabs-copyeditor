@@ -1,4 +1,6 @@
 plugins:
+  './lib/retext-osiolabs-rules':
+  # Strip lint/vale comments and drop everything after <!-- internal -->
   './lib/remark-osiolabs-strip-internal':
   remark-preset-lint-recommended:
   preset-lint-markdown-style-guide:
@@ -15,7 +17,6 @@ plugins:
   remark-lint-emphasis-marker: '_'
   remark-validate-links:
   remark-lint-no-dead-urls:
-  './lib/retext-osiolabs-rules':
 
 # These settings are used when you use remark to output formatted Markdown.
 settings:
