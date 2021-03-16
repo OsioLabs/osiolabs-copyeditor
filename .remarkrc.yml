@@ -1,4 +1,5 @@
 plugins:
+  './lib/remark-osiolabs-strip-internal':
   remark-preset-lint-recommended:
   preset-lint-markdown-style-guide:
   # We don't wrap lines of text based on length.
