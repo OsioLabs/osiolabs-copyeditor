@@ -1,0 +1,7 @@
+extends: readability
+message: "Grade level (%s), based on length of words and sentences. Edit for clear and concise language."
+level: warning
+grade: 9
+metrics:
+  - Flesch-Kincaid
+  - Automated Readability
