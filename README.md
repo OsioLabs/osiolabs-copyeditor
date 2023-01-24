@@ -97,4 +97,4 @@ Then add something like the following to your projects _package.json_ file:
 
 ## Modifying rules
 
-You can read more about adding or modifying the existing Vale rules here: https://errata-ai.github.io/vale/styles/
+You can read more about adding or modifying the existing Vale rules here: https://vale.sh/docs/topics/styles/
