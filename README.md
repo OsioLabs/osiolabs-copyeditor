@@ -9,7 +9,7 @@ _Note:_ You shouldn't use this project directly, rather, you should include it a
 Before you can use the tools you need to install all the dependencies:
 
 1. Run `npm install` in the root directory of the content repo
-1. Install Vale. https://errata-ai.github.io/vale/#installation
+1. Install Vale. https://vale.sh/docs/vale-cli/installation/
 
 ### Tutorial linter (remark-lint)
 
@@ -27,7 +27,7 @@ The linter consists of a configuration file for remark-cli, a custom remark plug
 
 This set of rules is intended to provide recommendations for improving a tutorial's content. As well as checking for things like `Drupal` vs. `drupal`. Violating the copy review styles should be considered a warning not an error, and should at least be reviewed before the content is published. There are likely to be many exceptions to these rules.
 
-For now we provide a set of vale rules that implement the Osio Labs style guide, and provide other copy editing recommendations. You'll need to install [vale](https://errata-ai.github.io/vale/) to use them.
+For now we provide a set of vale rules that implement the Osio Labs style guide, and provide other copy editing recommendations. You'll need to install [vale](https://vale.sh/docs/vale-cli/installation/) to use them.
 
 ### Use the review tools
 
