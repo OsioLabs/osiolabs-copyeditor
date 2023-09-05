@@ -2,7 +2,7 @@ extends: existence
 message: Consider replacing '%s' with a non device-specific action.
 link: https://docs.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui
 level: warning
-code: false
+scope: text
 ignorecase: true
 tokens:
   - click
