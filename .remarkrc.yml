@@ -4,6 +4,8 @@ plugins:
   './lib/retext-osiolabs-rules':
   remark-preset-lint-recommended:
   preset-lint-markdown-style-guide:
+  # We use double-dashes in filenames
+  remark-lint-no-file-name-consecutive-dashes: false
   # We don't wrap lines of text based on length.
   lint-maximum-line-length: false
   # We have some custom tags like [# summary #] which aren't valid Markdown.
