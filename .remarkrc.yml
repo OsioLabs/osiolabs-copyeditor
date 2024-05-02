@@ -19,6 +19,9 @@ plugins:
   remark-lint-emphasis-marker: '_'
   remark-validate-links:
   remark-lint-no-dead-urls:
+  # We often have complex and long lists. This allows for tight and loose lists.
+  # @see https://github.com/remarkjs/remark-lint/tree/main/packages/remark-lint-list-item-spacing#recommendation
+  remark-lint-list-item-spacing: true, {checkBlanks: true}
 
 # These settings are used when you use remark to output formatted Markdown.
 settings:
