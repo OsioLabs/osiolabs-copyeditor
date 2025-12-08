@@ -1,7 +1,7 @@
 plugins:
   # Strip lint/vale comments and drop everything after <!-- internal -->
-  './lib/remark-osiolabs-strip-internal':
-  './lib/retext-osiolabs-rules':
+  './lib/remark-osiolabs-strip-internal/index.js':
+  './lib/retext-osiolabs-rules/index.js':
   remark-preset-lint-recommended:
   preset-lint-markdown-style-guide:
   # We use double-dashes in filenames
@@ -28,4 +28,4 @@ settings:
   fence: '`'
   fences: true
   incrementListMarker: false
-  listItemIndent: 1
+  listItemIndent: one
