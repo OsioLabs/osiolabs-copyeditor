@@ -27,6 +27,7 @@ nginx
 nodemon
 npm
 nvm
+preprocess
 src
 stdout
 trello
